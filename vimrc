@@ -121,3 +121,6 @@ function! RemoveTraillingSpaces()
 endfunction
 
 nnoremap <silent> <F5> :call RemoveTraillingSpaces()<CR>
+
+colorscheme desert
+syntax on
