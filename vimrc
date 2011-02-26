@@ -123,3 +123,18 @@ endfunction
 nnoremap <silent> <F5> :call RemoveTraillingSpaces()<CR>
 
 colorscheme desert
+
+" Fonts configuration
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Monospace\ 14
+  elseif has("gui_photon")
+    set guifont=Monospace:s14
+  elseif has("gui_kde")
+    set guifont=Monospace/14/-1/5/50/0/0/0/1/0
+  elseif has("x11")
+    set guifont=-*-courier-medium-r-normal-*-*-180-*-*-m-*-*
+  else
+    set guifont=Monospace:h14:cDEFAULT
+  endif
+endif
